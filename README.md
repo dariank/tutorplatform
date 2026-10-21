@@ -27,18 +27,18 @@
 
   <table width="100%">
     <tr>
-      <td align="center" width="50%">
+      <td align="center" width="100%">
         <img src="./screenshots/alltutor.png" width="100%" alt="Каталог репетиторов" />
       </td>
-      <td align="center" width="50%">
+      <td align="center" width="100%">
         <img src="./screenshots/contacts.png" width="100%" alt="Контакты" />
       </td>
     </tr>
     <tr>
-      <td align="center" width="50%">
+      <td align="center" width="100%">
         <img src="./screenshots/adminpanel.png" width="100%" alt="Админ-панель" />
       </td>
-      <td align="center" width="50%">
+      <td align="center" width="100%">
         <img src="./screenshots/adminpanel2.png" width="100%" alt="Админ-панель 2" />
       </td>
     </tr>
