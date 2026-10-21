@@ -1,0 +1,147 @@
+/* css/style.css */
+:root {
+    --bg-color: #f4f7f6; /* Мягкий серо-зеленый фон */
+    --primary-color: #9cb7d4; /* Пастельный голубой */
+    --primary-hover: #7fa1c4;
+    --text-main: #3a3a3a; /* Темно-серый вместо черного */
+    --text-muted: #7a7a7a;
+    --white: #ffffff;
+    --border-radius: 12px;
+    --shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+a:hover {
+    color: var(--primary-hover);
+}
+
+/* Шапка */
+.header {
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    padding: 15px 0;
+}
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.nav-links a {
+    margin-left: 20px;
+    font-weight: 500;
+    color: var(--text-main);
+}
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Основной контент */
+.main-content {
+    flex: 1;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Подвал */
+.footer {
+    background-color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-top: auto;
+    border-top: 1px solid #eaeaea;
+}
+/* Красивые карточки с эффектом при наведении */
+.tutor-card {
+    background: var(--white);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03); /* Легкая тень по умолчанию */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease; /* Плавная анимация */
+    border: 2px solid transparent; /* Прозрачная обводка, чтобы карточка не дергалась */
+}
+
+/* Эффект при наведении мышки */
+.tutor-card:hover {
+    transform: translateY(-8px); /* Приподнимаем карточку вверх */
+    box-shadow: 0 15px 30px rgba(156, 183, 212, 0.3); /* Мягкая цветная тень */
+    border-color: var(--primary-color); /* Появляется обводка (пастельно-голубая) */
+}
+/* Скрываем стандартную полосу прокрутки для блока отзывов */
+#reviews-container::-webkit-scrollbar {
+    display: none; /* Для Chrome, Safari, Opera */
+}
+#reviews-container {
+    -ms-overflow-style: none;  /* Для IE и Edge */
+    scrollbar-width: none;  /* Для Firefox */
+}
+
+/* Единый стиль для всех заголовков H1 и H2 */
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-main);
+    letter-spacing: -0.5px; /* Делает текст чуть более современным */
+}
+
+/* Стиль для главного баннера на главной */
+.banner-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Единый стиль для всех заголовков */
+h1, h2, h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: var(--text-main);
+}
+
+/* Главные заголовки страницы */
+h2 {
+    font-size: 28px; 
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
