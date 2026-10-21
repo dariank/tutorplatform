@@ -6,32 +6,43 @@
 
 <br/>
 
-##  Скриншоты
+## Скриншоты
 
 <div align="center">
 
-  <img src="./screenshots/main1.png" width="80%" alt="Главная страница" />
-  <br/><br/><br/>
-
-  <img src="./screenshots/main22.png" width="80%" alt="Главная страница 2" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./screenshots/main3.png" width="80%" alt="Главная страница 3" />
-  <br/><br/><br/>
-
-  <img src="./screenshots/main4.png" width="80%" alt="Главная страница 4" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./screenshots/main5.png" width="80%" alt="Главная страница 5" />
-  <br/><br/><br/>
-
-  <img src="./screenshots/alltutor.png" width="49%" alt="Каталог репетиторов" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./screenshots/contacts.png" width="49%" alt="Контакты" />
-  <br/><br/><br/>
-
-  <img src="./screenshots/adminpanel.png" width="49%" alt="Админ-панель" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./screenshots/adminpanel2.png" width="49%" alt="Админ-панель 2" />
+  <img src="./screenshots/main1.png" width="100%" alt="Главная страница" />
   <br/><br/>
+  
+  <img src="./screenshots/main22.png" width="100%" alt="Главная страница 2" />
+  <br/><br/>
+  
+  <img src="./screenshots/main3.png" width="100%" alt="Главная страница 3" />
+  <br/><br/>
+  
+  <img src="./screenshots/main4.png" width="100%" alt="Главная страница 4" />
+  <br/><br/>
+  
+  <img src="./screenshots/main5.png" width="100%" alt="Главная страница 5" />
+  <br/><br/><br/>
+
+  <table width="100%">
+    <tr>
+      <td align="center" width="50%">
+        <img src="./screenshots/alltutor.png" width="100%" alt="Каталог репетиторов" />
+      </td>
+      <td align="center" width="50%">
+        <img src="./screenshots/contacts.png" width="100%" alt="Контакты" />
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="50%">
+        <img src="./screenshots/adminpanel.png" width="100%" alt="Админ-панель" />
+      </td>
+      <td align="center" width="50%">
+        <img src="./screenshots/adminpanel2.png" width="100%" alt="Админ-панель 2" />
+      </td>
+    </tr>
+  </table>
 
 </div>
 
@@ -47,6 +58,13 @@
 *    **Заявки:** оформление заявок на занятия через удобную форму.
 *    **Отзывы:** система рейтингов и обратной связи.
 *    **Админ-панель:** управление анкетами репетиторов и заявками.
+
+## Как развернуть локально
+
+1. **Создай новую базу данных в phpMyAdmin.**
+2. **Импортируй в неё файл sql/tutorplatform.sql (он лежит в корне проекта в папке sql).**
+3. **В папке config/ открой файл db.php и укажи свои локальные настройки (логин и пароль от БД).**
+4. **Открой проект**
 
 ## Технологии
 
